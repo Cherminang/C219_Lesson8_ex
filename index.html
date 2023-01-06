@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+    background-color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    img {
+    float: left;
+    }
+
+    p{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 60px;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 130px;
+    }
+
+
+</style>
+</head>
+
+<body>
+
+  
+
+  
+
+
+<div>
+<h1>About Me</h1>
+<p><img src="image/me.jpg" alt="me" style="width:300px;height:340px;margin-right:20px;">
+<br>
+<b>Ang Yi Ning Chermin</b>
+</br>
+<br>
+<b>19 years old</b>
+<br></br>
+Hi! I a 2nd year student studying in Republic Polytechnic, Digital Design and Development (DDD). I enjoy doing nothing. </p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<script>
+anime({
+targets: 'img',
+translateY: 0,
+rotate: 360,
+delay: anime.stagger(300, {start: 1000}),
+direction: 'alternate'
+});
+
+anime({
+targets: '.demo6',
+innerHTML: [0, 19], //start and end values
+easing: 'linear',
+round: 1, //rounds off to zero decimal places 
+duration: 2000
+});
+
+</script>
+
+</div>
+</body>
+</html>
